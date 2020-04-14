@@ -272,6 +272,9 @@
   .work-steps__images-wrapper {
     display: none;
   }
+  .work-steps__text-wrapper {
+    position: relative;
+  }
   .work-steps__step:nth-of-type(odd),
   .work-steps__step:nth-of-type(even) {
     align-self: center;
@@ -551,14 +554,6 @@
     width: 220px;
     max-width: 220px;
   }
-
-  html[data-useragent*='MSIE 10.0'] .testimonials__quotes::after {
-    bottom: 40px;
-    right: 40px;
-  }
-  html[data-useragent*='MSIE 10.0'] .testimonials__quotes::before {
-    top: -20px;
-  }
 }
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
@@ -566,39 +561,10 @@
     height: 350px;
   }
 
-  .testimonials__quotes::before {
-    top: -40px;
-  }
-  .testimonials__quotes::after {
-    bottom: 70px;
-  }
-
   .why-choose-us__feature {
     margin-bottom: 50px;
   }
   .contact__input {
     margin-bottom: 20px;
-  }
-
-  .large-number-block,
-  .work-steps__number,
-  .stats__heading,
-  .pricing__title,
-  .pricing__description,
-  .blog__post-date,
-  .footer__text {
-    font-family: 'Tw Cen MT', sans-serif;
-  }
-  .contact__input:-ms-input-placeholder {
-    font-family: 'Poppins Regular', 'AdobeInvisFont', 'MyriadPro-Regular', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    text-align: center;
-    font-size: 16px;
-    color: #616161;;
-    color: var(--brownish-grey);
-  }
-  .testimonials__signing-sacramento {
-    font-family: 'Vladimir Script', cursive;
   }
 }
